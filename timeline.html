@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAML Timeline</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>YAML Timeline</h1>
+        <input type="file" id="directoryInput" webkitdirectory directory multiple style="display: none" />
+        <button id="loadButton">Select Folder with YAML Files</button>
+        <div class="timeline-container">
+            <div id="timeline">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content" id="modal-content">
+           <span class="close-modal" id="close-modal">×</span>
+      </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
